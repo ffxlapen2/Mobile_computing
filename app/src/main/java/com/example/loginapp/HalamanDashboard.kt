@@ -4,12 +4,8 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.loginapp.databinding.ActivityHalamanDashboardBinding
-import com.example.loginapp.databinding.ActivityMainBinding
 
 class HalamanDashboard : AppCompatActivity() {
     private lateinit var binding: ActivityHalamanDashboardBinding
@@ -60,6 +56,10 @@ class HalamanDashboard : AppCompatActivity() {
             }
         }
 
+        // Tombol "Tugas 4" ke RecyclerActivity
+        binding.btnTambahan.setOnClickListener {
+            val intent = Intent(this, RecyclerActivity::class.java)
+            startActivity(intent)
+        }
     }
-
 }

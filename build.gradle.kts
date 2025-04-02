@@ -2,4 +2,13 @@
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
+
+}
+dependencies {
+    implementation("androidx.cardview:cardview:1.0.0") // atau versi terbaru
+    // ... dependensi lain ...
+}
+
+fun implementation(s: String) {
+
 }
