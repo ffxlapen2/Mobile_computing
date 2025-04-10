@@ -15,7 +15,7 @@ class HalamanDashboard : AppCompatActivity() {
         binding = ActivityHalamanDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Cek apakah WhatsApp terinstal
+        // untuk cek apakah WhatsApp terinstal
         val installedApps = packageManager.getInstalledApplications(0)
         var isWhatsAppInstalled = false
 
@@ -30,13 +30,6 @@ class HalamanDashboard : AppCompatActivity() {
             Toast.makeText(this, "WhatsApp ADA di perangkat!", Toast.LENGTH_LONG).show()
         } else {
             Toast.makeText(this, "WhatsApp TIDAK ditemukan!", Toast.LENGTH_LONG).show()
-        }
-
-        // Tombol kembali ke MainActivity
-        binding.btnKembali.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
         }
 
         binding.btnbukabrowser.setOnClickListener {

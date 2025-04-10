@@ -11,7 +11,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.loginapp.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity() {
+class
+MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +26,12 @@ class MainActivity : AppCompatActivity() {
         }
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val textView = findViewById<TextView>(R.id.LupaPW)
+        textView.setOnClickListener {
+            val intent = Intent(this, ForgotPW_App::class.java)
+            startActivity(intent)
+        }
 
         binding.btnLogin1.setOnClickListener {
             val intent = Intent(this, HalamanDashboard::class.java)

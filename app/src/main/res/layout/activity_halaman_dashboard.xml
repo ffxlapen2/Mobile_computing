@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="24dp"
+    tools:context=".HalamanDashboard">
 
     <TextView
         android:id="@+id/Halaman_Dashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:text="Selamat Datang di dashboard"
-        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:text="Selamat Datang di Dashboard"
+        android:textSize="19sp"
         android:textStyle="bold"
         android:textColor="@android:color/holo_blue_dark" />
 
     <LinearLayout
         android:id="@+id/tampilan"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_below="@id/Halaman_Dashboard"
-        android:layout_marginTop="50dp">
-
-        <Button
-            android:id="@+id/btnKembali"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kembali"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginEnd="16dp"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp">
 
         <Button
             android:id="@+id/btnbukabrowser"
@@ -43,19 +35,18 @@
             android:layout_height="wrap_content"
             android:text="Tugas 3"
             android:textStyle="bold"
-            android:textSize="20sp"/>
+            android:textSize="18sp"
+            android:layout_marginEnd="24dp" />
+
+        <Button
+            android:id="@+id/btnTambahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tugas 4"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+
     </LinearLayout>
-
-    <Button
-        android:id="@+id/btnTambahan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tugas 4"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:layout_below="@id/tampilan"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-
 
 </RelativeLayout>
