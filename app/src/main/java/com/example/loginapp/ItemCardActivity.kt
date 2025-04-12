@@ -1,20 +1,26 @@
 package com.example.loginapp
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.loginapp.model.Item
 
 class ItemCardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_item_card)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val item = intent.getParcelableExtra<Item>("item")
+
+        val img: ImageView = findViewById(R.id.detailImage)
+        val title: TextView = findViewById(R.id.detailTitle)
+        val desc: TextView = findViewById(R.id.detailDesc)
+
+        item?.let {
+            img.setImageResource(it.imageSource)
+            title.text = it.imageTitle
+            desc.text = it.imageDesc
         }
     }
 }
