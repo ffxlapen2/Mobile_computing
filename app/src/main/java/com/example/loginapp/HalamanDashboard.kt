@@ -77,6 +77,11 @@ class HalamanDashboard : AppCompatActivity() {
                 finish()
                 true
             }
+            R.id.about -> {
+                // Pindah ke halaman about
+                startActivity(Intent(this, Activity_About::class.java))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
