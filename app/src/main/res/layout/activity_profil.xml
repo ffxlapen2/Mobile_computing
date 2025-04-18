@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/fotoprofile"
+        android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FERLY FEBRIAN BATMOMOLIN"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email : charlesgdawe@examplepetstore.com"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/profile_nim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM: 22411019"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/profile_kelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teknik Informatika TA 2022"
+            android:textStyle="bold"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+</ScrollView>

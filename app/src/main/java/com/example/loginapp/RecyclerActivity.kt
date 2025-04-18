@@ -7,7 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.loginapp.adapter.ItemAdapter
 import com.example.loginapp.model.Item
 
-class RecyclerActivity : AppCompatActivity() {
+class
+RecyclerActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: ItemAdapter
 

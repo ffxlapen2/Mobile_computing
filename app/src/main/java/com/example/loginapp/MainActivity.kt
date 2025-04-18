@@ -33,6 +33,11 @@ MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.Mendaftar.setOnClickListener {
+            val intent = Intent(this, RegisterApp::class.java)
+            startActivity(intent)
+        }
+
         binding.btnLogin1.setOnClickListener {
             val intent = Intent(this, HalamanDashboard::class.java)
             startActivity(intent)
