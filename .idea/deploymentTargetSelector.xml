@@ -7,9 +7,9 @@
         <DialogSelection>
           <targets>
             <Target type="DEFAULT_BOOT">
-              <handle>
-                <DeviceId pluginId="PhysicalDevice" identifier="serial=4934f2a0" />
-              </handle>
+              <template>
+                <DeviceId pluginId="FirebaseDirectAccess" type="TEMPLATE" identifier="model_id=a51/31" />
+              </template>
             </Target>
           </targets>
         </DialogSelection>
