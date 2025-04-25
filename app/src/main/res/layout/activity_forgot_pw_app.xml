@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
+    android:background="@drawable/fondotumblr"
     tools:context=".ForgotPW_App">
 
     <TextView
@@ -26,6 +27,7 @@
         android:layout_below="@id/Forget_email"
         android:layout_marginTop="24dp"
         android:hint="Masukan Email"
+        android:background="@color/white"
         android:padding="12dp" />
 
     <EditText
@@ -35,6 +37,7 @@
         android:layout_below="@id/Email"
         android:layout_marginTop="16dp"
         android:hint="Masukan password"
+        android:background="@color/white"
         android:padding="12dp" />
 
     <EditText
@@ -44,6 +47,7 @@
         android:layout_below="@id/etPassword"
         android:layout_marginTop="16dp"
         android:hint="Masukan password lagi"
+        android:background="@color/white"
         android:padding="12dp" />
 
     <Button
