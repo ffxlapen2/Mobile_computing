@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondotumblr"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <!-- Judul -->
@@ -30,7 +30,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Nama Depan"
-        android:background="@color/white"
         android:padding="12dp" />
 
     <!-- Nama Belakang -->
@@ -43,7 +42,6 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Nama Belakang"
-        android:background="@color/white"
         android:padding="12dp" />
 
     <!-- Nomor HP -->
@@ -57,7 +55,6 @@
         android:layout_marginEnd="24dp"
         android:hint="Masukan Nomor Telepon"
         android:padding="12dp"
-        android:background="@color/white"
         android:inputType="phone" />
 
     <!-- Email -->
@@ -71,7 +68,6 @@
         android:layout_marginEnd="24dp"
         android:hint="Masukan Email"
         android:padding="12dp"
-        android:background="@color/white"
         android:inputType="textEmailAddress" />
 
     <!-- Password -->
@@ -85,7 +81,6 @@
         android:layout_marginEnd="24dp"
         android:hint="Masukan Password"
         android:padding="12dp"
-        android:background="@color/white"
         android:inputType="textPassword" />
 
     <!-- Tombol Login -->

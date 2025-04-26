@@ -1,53 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp"
-    android:background="@drawable/fondotumblr"
-    tools:context=".HalamanDashboard">
+    android:background="@drawable/background"
+    tools:context=".HalamanDashboard"
+    android:padding="24dp">
 
+    <!-- Gambar Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/bola_news"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Logo"/>
+
+    <!-- Judul Besar -->
     <TextView
-        android:id="@+id/Halaman_Dashboard"
+        android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
-        android:text="Selamat Datang di Dashboard"
-        android:textSize="19sp"
+        android:text="DASHBOARD"
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:textColor="@android:color/holo_blue_dark" />
+        app:layout_constraintTop_toBottomOf="@id/imgLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
-    <LinearLayout
-        android:id="@+id/tampilan"
+    <!-- Sub Judul -->
+    <TextView
+        android:id="@+id/txtSubTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_below="@id/Halaman_Dashboard"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp">
+        android:text="Selamat Datang, Pilih Tugas Anda"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
 
-        <Button
-            android:id="@+id/btnbukabrowser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tugas 3"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginEnd="24dp" />
+    <!-- Tombol Tugas 3 -->
+    <Button
+        android:id="@+id/btnbukabrowser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tugas 3"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/txtSubTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
 
-        <Button
-            android:id="@+id/btnTambahan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tugas 4"
-            android:textStyle="bold"
-            android:textSize="18sp" />
+    <!-- Tombol Tugas 4/5 -->
+    <Button
+        android:id="@+id/btnTambahan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tugas 4 / 5"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btnbukabrowser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
+    <!-- Quotes Motivasi -->
+    <TextView
+        android:id="@+id/txtMotivation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep Learning, Keep Growing! 🚀"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/btnTambahan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
 
-    </LinearLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

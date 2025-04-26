@@ -2,7 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:background="@drawable/fondotumblr"
+    android:background="@drawable/background"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -44,9 +44,8 @@
             android:layout_height="wrap_content"
             android:text="Aplikasi ini berisi sejarah klub sepak bola dari berbagai belahan dunia. Anda dapat menemukan profil club, sejarah berdirinya club, prestasi-prestasi penting, hingga perkembangan terbaru dari klub tersebut.\n\nDengan tampilan yang sederhana dan informatif, aplikasi ini cocok untuk semua pecinta sepak bola!"
             android:textSize="16sp"
-            android:background="@color/white"
             android:textStyle="italic|bold"
-            android:textColor="#333333"
+            android:textColor="@color/white"
             android:lineSpacingExtra="4dp"
             app:layout_constraintTop_toBottomOf="@id/tvAboutTitle"
             app:layout_constraintStart_toStartOf="parent"
@@ -60,9 +59,8 @@
             android:layout_height="wrap_content"
             android:text="Dikembangkan oleh:\nNama: [Nama Anda]\nUniversitas: [Nama Kampus]\nEmail: yourmail@example.com"
             android:textSize="10sp"
-            android:background="@color/white"
             android:textStyle="bold"
-            android:textColor="#444444"
+            android:textColor="@color/white"
             android:layout_marginTop="24dp"
             app:layout_constraintTop_toBottomOf="@id/tvAboutDescription"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +72,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Versi Aplikasi: 1.0"
-            android:background="@color/white"
             android:textSize="14sp"
             android:textColor="#888888"
             app:layout_constraintTop_toBottomOf="@id/tvDeveloper"
