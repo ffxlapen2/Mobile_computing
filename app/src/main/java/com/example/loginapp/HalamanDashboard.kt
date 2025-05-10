@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.loginapp.databinding.ActivityHalamanDashboardBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class HalamanDashboard : AppCompatActivity() {
     private lateinit var binding: ActivityHalamanDashboardBinding
@@ -16,6 +17,13 @@ class HalamanDashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHalamanDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Cek apakah user sudah login
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user == null) {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
 
         // Mengecek apakah WhatsApp terinstal
         val installedApps = packageManager.getInstalledApplications(0)
@@ -66,22 +74,22 @@ class HalamanDashboard : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.profile -> {
-                // Pindah ke halaman profil
                 startActivity(Intent(this, ProfilActivity::class.java))
                 true
             }
 
             R.id.logout -> {
-                // Kembali ke halaman login
+                FirebaseAuth.getInstance().signOut() // Inilah kunci logout
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
                 true
             }
+
             R.id.about -> {
-                // Pindah ke halaman about
                 startActivity(Intent(this, Activity_About::class.java))
                 true
             }
+
             else -> super.onOptionsItemSelected(item)
         }
     }

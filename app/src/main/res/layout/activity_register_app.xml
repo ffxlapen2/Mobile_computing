@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
+    tools:context=".RegisterApp">
 
     <!-- Judul -->
     <TextView
@@ -83,15 +83,28 @@
         android:padding="12dp"
         android:inputType="textPassword" />
 
-    <!-- Tombol Login -->
+    <!-- Konfirmasi Password -->
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Konfirmasi Password"
+        android:padding="12dp"
+        android:inputType="textPassword" />
+
+    <!-- Tombol Register -->
     <Button
         android:id="@+id/btnLogin2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etPassword"
+        android:layout_below="@id/etConfirmPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
-        android:text="Login"
+        android:text="Register"
         android:textStyle="bold"
         android:textSize="20sp" />
 
