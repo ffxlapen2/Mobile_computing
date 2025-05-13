@@ -17,13 +17,13 @@
             android:exported="false" />
         <activity
             android:name=".ProfilActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ItemCardActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".RecyclerActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".HalamanDashboard"
             android:exported="false" />

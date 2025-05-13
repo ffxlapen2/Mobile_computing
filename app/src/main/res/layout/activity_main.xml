@@ -36,6 +36,7 @@
         android:layout_below="@id/Email"
         android:layout_marginTop="16dp"
         android:hint="Masukkan Password"
+        android:drawableEnd="@drawable/visibility_off_24dp"
         android:padding="12dp"
         android:inputType="textPassword" />
 

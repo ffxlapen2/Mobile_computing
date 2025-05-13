@@ -30,6 +30,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Nama Depan"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
         android:padding="12dp" />
 
     <!-- Nama Belakang -->
@@ -42,6 +44,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Nama Belakang"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
         android:padding="12dp" />
 
     <!-- Nomor HP -->
@@ -54,6 +58,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Masukan Nomor Telepon"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
         android:padding="12dp"
         android:inputType="phone" />
 
@@ -67,6 +73,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Masukan Email"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
         android:padding="12dp"
         android:inputType="textEmailAddress" />
 
@@ -80,6 +88,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Masukan Password"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
         android:padding="12dp"
         android:inputType="textPassword" />
 
@@ -93,6 +103,8 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:hint="Konfirmasi Password"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#CCCCCC"
         android:padding="12dp"
         android:inputType="textPassword" />
 
